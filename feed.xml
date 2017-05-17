@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>독서실 솔루션</title>
+    <link>http://readingroom.develist.com/</link>
+    <description>독서실사이트제작,모바일웹독서실사이트,반응형독서실사이트,독서실홈페이지,독서실예약사이트제작</description>
+    <language>ko</language>
+    <pubDate>Wed, 17 May 2017 19:54:15 +0900</pubDate>
+    <generator>Jekyll v3.2.1</generator>
+    <managingEditor>독서실 솔루션</managingEditor>
+
+    <item>
+      <title>독서실 솔루션</title>
+      <link>http://readingroom.develist.com/</link>
+
+      	<description>
+          &lt;p&gt;독서실 웹사이트 PC 버전, 독서실 웹사이트 PC 버전&lt;br /&gt;
+          SNS 자동 소통 프로그램으로 웹사이트부터 홍보까지 한방에 !
+          독서실 맞춤 솔루션을 경제적 부담없이 경험해보세요.&lt;br /&gt;
+        </description>
+
+       <category>posts/</category>
+      <guid>http://readingroom.develist.com/landing/</guid>
+      <pubDate>Thu, 13 Oct 2016 00:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>

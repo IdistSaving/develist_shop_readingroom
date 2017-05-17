@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: 
+Sitemap:http://readingroom.develist.com/sitemap.xml
+
+User-agent:Yeti
+Disallow: 

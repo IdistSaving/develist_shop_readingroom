@@ -1,0 +1,16 @@
+<div class="w-100">
+  <div class="w-100-N450 w-336D375M100-X450 t-c cen-x" ng-init="title_text_first=false;">
+    <span class="f-n d-i f-24px-N450 ls-18px-N450 f-12px-X450 lh-15px-X450 ls-6px fw-b c-{{style.point1}} {{style.shadow_title}} animated v-hidden"
+    in-view="title_text_first=$inview;"
+    ng-class="{'fadeInUp v-visible':title_text_first==true}">
+      {{titles[0].text}}
+    </span>
+  </div>
+  <div class="w-100-N450 w-336D375M100-X450 mt-15px cen-x" ng-init="title_text_second=false;">
+    <span class="w-100 f-90px-N450 ls-9px c-{{style.point1}} {{style.shadow_title}} f-35px-X450 t-c animated v-hidden"
+    in-view="title_text_second=$inview;"
+    ng-class="{'fadeInUp v-visible':title_text_second==true}">
+      {{titles[1].text}}
+    </span>
+  </div>
+</div>

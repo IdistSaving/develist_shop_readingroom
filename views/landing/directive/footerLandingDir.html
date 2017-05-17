@@ -1,0 +1,50 @@
+<div class="w-100">
+  <div class="w-573px cen-x d-n-X450">
+    <div class="w-100">
+      <div class="h-24px" ng-repeat="(footer_index, footer) in footers | limitTo: 4 : 0  track by footer_index"
+      ng-class="[{'ml-15px':!$first}]">
+        <span class="f-12px lh-24px c-{{style.point1}} o-50">{{footer.info}}{{footer.detail}}</span>
+        <div class="w-1px h-12px b-{{style.point1}} cen-y" ng-class="[{'ml-15px':!$last}]" ng-if="!$last">
+        </div>
+      </div>
+    </div>
+    <div class="w-491px mt-6px cen-x">
+      <div class="h-24px" ng-repeat="(footer_index, footer) in footers | limitTo: 3 : 4  track by footer_index"
+      ng-class="[{'ml-15px':!$first}]">
+        <span class="f-12px lh-24px c-{{style.point1}} o-50">{{footer.info}}{{footer.detail}}</span>
+        <div class="w-1px h-12px b-{{style.point1}} cen-y" ng-class="[{'ml-15px':!$last}]" ng-if="!$last">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-100 pl-39px pr-39px d-n-N450">
+    <div class="w-100">
+      <div class="h-11px" ng-repeat="(footer_index, footer) in footers | limitTo: 3 : 0  track by footer_index"
+      ng-class="[{'ml-3px':!$first}]">
+        <span class="f-9px lh-11px c-{{style.point1}} o-50">{{footer.info}}{{footer.detail}}</span>
+        <div class="w-1px h-11px b-{{style.point1}} cen-y" ng-class="[{'ml-3px':!$last}]" ng-if="!$last">
+        </div>
+      </div>
+    </div>
+    <div class="w-100 mt-6px">
+      <div class="cen-x">
+        <div class="h-11px" ng-repeat="(footer_index, footer) in footers | limitTo: 2 : 3  track by footer_index"
+        ng-class="[{'ml-3px':!$first}]">
+          <span class="f-9px lh-11px c-{{style.point1}} cen-x o-50">{{footer.info}}{{footer.detail}}</span>
+          <div class="w-1px h-11px b-{{style.point1}} cen-y" ng-class="[{'ml-3px':!$last}]" ng-if="!$last">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 mt-6px cen-x">
+      <div class="cen-x">
+        <div class="h-11px" ng-repeat="(footer_index, footer) in footers | limitTo: 2 : 5  track by footer_index"
+        ng-class="[{'ml-3px':!$first}]">
+          <span class="f-9px lh-11px c-{{style.point1}} o-50">{{footer.info}}{{footer.detail}}</span>
+          <div class="w-1px h-11px b-{{style.point1}} cen-y" ng-class="[{'ml-3px':!$last}]" ng-if="!$last">
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

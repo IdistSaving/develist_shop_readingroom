@@ -1,0 +1,49 @@
+<div class="">
+  <!-- WEB -->
+  <div class="{{solution.web_width}} h-254px d-n-X450" ng-class="{'w-240px':$last}">
+    <div class="{{solution.width_background}} h-100" ng-click="clickImage(solution.dialog)">
+      <div class="p-a w-100 h-100 z-3">
+        <div class="{{solution.width_image}} h-180px pt-15px cen-x" ng-mouseenter="hoverIn(solution)" ng-mouseleave="hoverOut(solution)"></div>
+      </div>
+      <div class="p-a w-100 h-100 z-2" ng-show="solution.hoverIn">
+        <div class="p-a w-100 h-100 b-bk o-50 z-1"></div>
+        <div class="p-a w-100 h-100 z-2">
+          <i class="f-120px lh-120px cen c-{{style.point1}} ion-ios-search-strong"></i>
+        </div>
+      </div>
+      <div class="{{solution.width_image}} pt-15px cen-x z-1">
+        <button class="w-100">
+          <div class="w-100">
+            <img class="w-100 h-180px" ng-src="{{solution.image}}">
+          </div>
+          <div class="w-100 mt-30px">
+            <span class="f-24px cen-x c-{{style.point1}}">{{solution.name}}</span>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="{{solution.web_block}} h-100" ng-if="!$last">
+      <i class="f-45px lh-45px cen c-we ion-plus-round"></i>
+    </div>
+  </div>
+  <!-- APP -->
+  <div class="w-100 pl-30px pr-30px mt-15px d-n-N450" ng-class="{'mt-15px':!$first}">
+    <div class="w-122px">
+      <div class="w-18px h-60px" ng-show="!$first">
+        <i class="f-24px lh-24px c-{{style.point1}} cen-y ion-plus-round"></i>
+      </div>
+      <button class="w-100_18px h-60px" ng-class="[{'w-100_18px': !$first}, {'w-100':$first}, {'f-r':$first}]"
+      ng-click="clickImage(solution.dialog)">
+        <img class="{{solution.app_width}} h-60px b-img cen-x" ng-src="{{solution.image}}" />
+      </button>
+    </div>
+    <div class="w-100_122px pl-15px">
+      <div class="w-100">
+        <span class="f-12px lh-15px c-{{style.point1}}">{{solution.name}}</span>
+      </div>
+      <div class="w-100 mt-6px">
+        <span class="f-9px c-we c-{{style.point1}}">{{solution.description}}</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,98 @@
+{
+  "style":{
+    "shadow_title":"ts-0_2_4__bk_50",
+    "point1":"FFFFFF",
+    "color_text_button":"BDBDBD",
+    "dark1":"BDBDBD",
+    "background":"9A07CA"
+  },
+  "titles":[
+    {
+      "text":"웹사이트부터 홍보까지 한방에!"
+    },
+    {
+      "text":"클럽 맞춤 솔루션"
+    }
+  ],
+  "background":{
+    "cover":"/images/cover/club_cover.png"
+  },
+  "solutions" : [
+    {
+      "name":"PC WEB",
+      "hoverIn":false,
+      "image":"/images/solutions/club_pc_solution.png",
+      "width_background":"w-371px",
+      "width_image":"w-311px",
+      "web_block":"w-94px",
+      "web_width":"w-465px",
+      "app_width":"w-104px",
+      "dialog":{
+        "template":"views/templates/dialog/pcSolution.html",
+        "showClose":false,
+        "controller":"PopUpsCtrl"
+      },
+      "description":"85%의 고객은 인터넷을 통해 클럽 등의 업체를 선택한다고 합니다. 온라인 고객들을 더 이상 놓치지 마세요!"
+    },
+    {
+      "name":"MOBILE WEB",
+      "hoverIn":false,
+      "image":"/images/solutions/club_mobile_solution.png",
+      "width_background":"w-259px",
+      "width_image":"w-199px",
+      "web_block":"w-94px",
+      "web_width":"w-353px",
+      "app_width":"w-80px",
+      "dialog":{
+        "template":"views/templates/dialog/mobileSolution.html",
+        "showClose":false,
+        "controller":"PopUpsCtrl"
+      },
+      "description":"네이버 검색량에 따르면 PC보다 4배 많은 사람들이 핸드폰에서 클럽을 검색하고 있습니다. 모바일 고객들을 더 이상 놓치지 마세요!"
+    },
+    {
+      "name":"SNS MARKETING",
+      "hoverIn":false,
+      "image":"/images/solutions/club_sns_solution.png",
+      "width_background":"w-240px",
+      "width_image":"w-180px",
+      "web_block":"",
+      "web_width":"w-180px",
+      "app_width":"w-60px",
+      "dialog":{
+        "template":"views/templates/dialog/snsSolution.html",
+        "showClose":false,
+        "controller":"PopUpsCtrl"
+      },
+      "description":"SNS를 자동으로 관리해주는 SNS프로그램 부분 1위 그래머의 모든 제품 (50만원 상당) 을 무료로 사용할 수 있습니다. 페이스북, 인스타그램, 블로그 등을 손쉽게 운영해보세요!"
+    }
+  ],
+  "price":{
+    "price":"= 5,000,000원"
+  },
+  "popup":{
+    "pc":{
+      "title":"클럽 웹사이트 PC 버전",
+      "image":"/images/solutions/club_pop_pc_solution.png",
+      "description1":"85%의 고객은 인터넷을 통해",
+      "description2":"클럽 등의 업체를 선택한다고 합니다. 온라인 고객들을 더 이상 놓치지 마세요!"
+    },
+    "mobile":{
+      "title":"클럽 웹사이트 PC 버전",
+      "image":"/images/solutions/club_pop_mobile_solution.png",
+      "description1":"네이버 검색량에 따르면 PC보다",
+      "description2":"4배 많은 사람들이 핸드폰에서",
+      "description3":" 클럽을 검색하고 있습니다. 모바일 고객들을 더 이상 놓치지 마세요!"
+    },
+    "sns":{
+      "title":"SNS 자동 소통 프로그램",
+      "image":"/images/solutions/club_pop_sns_solution.png",
+      "description1":"SNS를 자동으로 관리",
+      "description2":"해주는 SNS프로그램 부분 1위 그래머의 모든 제품 (50만원 상당) 을 무료로 사용할 수 있습니다. 페이스북, 인스타그램, 블로그 등을 손쉽게 운영해보세요!"
+    }
+  },
+  "contact":{
+    "name":"담당자 배우현 연락처",
+    "tel":"010-2591-4024"
+  }
+}
