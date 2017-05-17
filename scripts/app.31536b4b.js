@@ -38,15 +38,15 @@ angular
 
   // Initialize Function Seciton
   $rootScope.initialize = function() {
-    if($rootScope.urlParser.getHostname()=='localhost' && $rootScope.urlParser.getPort() == '10600') {
-      // $resource('json/club.json').get({}, function(service) {
-      // $resource('json/nail.json').get({},function(service){
-      $resource('json/readingRoom.json').get({},function(service){
-        $rootScope.service = service;
-      });
-    };
+    // $resource('json/club.json').get({}, function(service) {
+    // $resource('json/nail.json').get({},function(service){
+    $resource('json/readingRoom.json').get({},function(service){
+      $rootScope.service = service;
+
+    });
   }
   $rootScope.initialize();
+
 
 
 
