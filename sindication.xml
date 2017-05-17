@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://webmastertool.naver.com">
+  <id>http://readingroom.develist.com</id>
+  <title><![CDATA[ 독서실 솔루션 ]]></title>
+  <author>
+    <name>독서실 솔루션</name>
+  </author>
+
+  <updated>2016-10-21T19:54:15+09:00</updated>
+  <link rel="site" href="http://readingroom.develist.com" />
+
+
+  <entry>
+    <id>http://anyang.qustmddus.com/about/</id>
+    <title><![CDATA[ 독서실 솔루션 ]]></title>
+    <author>
+      <name>독서실 솔루션</name>
+    </author>
+    <updated>2016-10-13T00:00:00+09:00</updated>
+    <published>2016-10-13T00:00:00+09:00</published>
+    <link rel="via" href="http://readingroom.develist.com/landing/" />
+      <content type="html">
+        <![CDATA[
+        &lt;p&gt;독서실 웹사이트 PC 버전, 독서실 웹사이트 PC 버전&lt;br /&gt;
+        SNS 자동 소통 프로그램으로 웹사이트부터 홍보까지 한방에 !
+        독서실 맞춤 솔루션을 경제적 부담없이 경험해보세요.&lt;br /&gt;]]>
+      </content>
+  </entry>
+</feed>
