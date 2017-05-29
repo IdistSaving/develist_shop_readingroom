@@ -2,6 +2,8 @@
   "style":{
     "shadow_title":"",
     "point1":"424242",
+    "white":"FFFFFF",
+    "plus_icon_color":"424242",
     "color_text_button":"FFFFFF",
     "dark1":"BDBDBD",
     "background":"FFFFFF"
@@ -22,11 +24,16 @@
       "name":"PC WEB",
       "hoverIn":false,
       "image":"/images/solutions/nail_pc_solution.png",
-      "width_background":"w-371px",
-      "width_image":"w-311px",
-      "web_block":"w-94px",
-      "web_width":"w-465px",
-      "app_width":"w-104px",
+      "tablet_image":"/images/solutions/nail_tablet_pc_solution.png",
+      "width_background":"w-371",
+      "tablet_width_background":"w-238",
+      "width_image":"w-311",
+      "tablet_width_image":"w-207",
+      "web_block":"w-94",
+      "tablet_block":"w-42",
+      "web_width":"w-465",
+      "tablet_width":"w-290",
+      "app_width":"w-104",
       "dialog":{
         "template":"views/templates/dialog/pcSolution.html",
         "showClose":false,
@@ -38,11 +45,16 @@
       "name":"MOBILE WEB",
       "hoverIn":false,
       "image":"/images/solutions/nail_mobile_solution.png",
-      "width_background":"w-259px",
-      "width_image":"w-199px",
-      "web_block":"w-94px",
-      "web_width":"w-353px",
-      "app_width":"w-80px",
+      "tablet_image":"/images/solutions/nail_tablet_mobile_solution.png",
+      "width_background":"w-259",
+      "tablet_width_background":"w-190",
+      "width_image":"w-199",
+      "tablet_width_image":"w-159",
+      "web_block":"w-94",
+      "tablet_block":"w-42",
+      "web_width":"w-353",
+      "tablet_width":"w-241",
+      "app_width":"w-80",
       "description":"네이버 검색량에 따르면 PC보다 7배 많은 사람들이 핸드폰에서 네일샵을 검색 하고 있습니다. 모바일 고객들을 더 이상 놓치지 마세요!",
       "dialog":{
         "template":"views/templates/dialog/mobileSolution.html",
@@ -55,11 +67,16 @@
       "name":"SNS MARKETING",
       "hoverIn":false,
       "image":"/images/solutions/nail_sns_solution.png",
-      "width_background":"w-240px",
-      "width_image":"w-180px",
-      "web_width":"w-180px",
-      "app_block":"18",
-      "app_width":"w-60px",
+      "tablet_image":"/images/solutions/nail_tablet_sns_solution.png",
+      "width_background":"w-240",
+      "tablet_width_background":"w-159",
+      "width_image":"w-180",
+      "tablet_width_image":"w-120",
+      "web_block":"",
+      "tablet_block":"",
+      "web_width":"w-180",
+      "tablet_width":"w-120",
+      "app_width":"w-60",
       "description":"SNS를 자동으로 관리해주는 SNS프로그램 부분 1위 그래머의 모든 제품 (50만원 상당) 을 무료로 사용할 수 있습니다. 페이스북, 인스타그램, 블로그 등을 손쉽게 운영해보세요!",
       "dialog":{
         "template":"views/templates/dialog/snsSolution.html",
@@ -76,12 +93,14 @@
     "pc":{
       "title":"네일샵 웹사이트 PC 버전",
       "image":"/images/solutions/nail_pop_pc_solution.png",
+      "tablet_image":"/images/solutions/nail_tablet_pop_pc_solution.png",
       "description1":"85%의 고객은 인터넷을 통해",
       "description2":"네일샵 업체를 선택한다고 합니다. 온라인 고객들을 더 이상 놓치지 마세요!"
     },
     "mobile":{
-      "title":"네일샵 웹사이트 PC 버전",
+      "title":"네일샵 웹사이트 MOBILE 버전",
       "image":"/images/solutions/nail_pop_mobile_solution.png",
+      "tablet_image":"/images/solutions/nail_tablet_pop_mobile_solution.png",
       "description1":"네이버 검색량에 따르면 PC보다",
       "description2":"7배 많은 사람들이 핸드폰에서",
       "description3":"네일샵을 검색 하고 있습니다. 모바일 고객들을 더 이상 놓치지 마세요!"
@@ -89,12 +108,39 @@
     "sns":{
       "title":"SNS 자동 소통 프로그램",
       "image":"/images/solutions/nail_pop_sns_solution.png",
+      "tablet_image":"/images/solutions/nail_tablet_pop_sns_solution.png",
       "description1":"SNS를 자동으로 관리",
       "description2":"해주는 SNS프로그램 부분 1위 그래머의 모든 제품 (50만원 상당) 을 무료로 사용할 수 있습니다. 페이스북, 인스타그램, 블로그 등을 손쉽게 운영해보세요!"
     }
   },
-  "contact":{
-    "name":"담당자 지우탁 연락처",
-    "tel":"010-2074-4273"
-  }
+  "contacts":[
+    {
+      "icon":"ion-ios-telephone",
+      "text_en":"phone",
+      "text":"010-2074-4273"
+    },
+    {
+      "icon":"ion-android-chat",
+      "text_en":"kakao talk",
+      "text":"iar0403"
+    }
+  ],
+  "pc_buttons": [
+    {
+      "button":"웹사이트",
+      "url":"https://www.naver.com/"
+    },
+    {
+      "button":"관리자페이지",
+      "url":"https://www.google.co.kr/"
+    }
+  ],
+  "mobile_buttons": [
+    {
+      "button":"웹사이트", "url":"https://m.naver.com/"
+    },
+    {
+      "button":"관리자페이지", "url":"http://m.blog.naver.com/"
+    }
+  ]
 }

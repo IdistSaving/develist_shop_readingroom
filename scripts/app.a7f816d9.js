@@ -49,7 +49,6 @@ angular
 
 
 
-
   if (storageS.get('is_auto_login')) {
     $rootScope.user = storageS.get('user');
   } else {

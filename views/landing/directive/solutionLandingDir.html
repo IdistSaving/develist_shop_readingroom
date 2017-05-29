@@ -1,48 +1,75 @@
 <div class="">
   <!-- WEB -->
-  <div class="{{solution.web_width}} h-254px d-n-X450" ng-class="{'w-240px':$last}">
-    <div class="{{solution.width_background}} h-100" ng-click="clickImage(solution.dialog)">
+  <div class="{{solution.web_width}}px h-254px d-n-X1058" ng-class="{'w-240px':$last}">
+    <div class="{{solution.width_background}}px h-100" ng-click="clickImage(solution.dialog)">
       <div class="p-a w-100 h-100 z-3">
-        <div class="{{solution.width_image}} h-180px pt-15px cen-x" ng-mouseenter="hoverIn(solution)" ng-mouseleave="hoverOut(solution)"></div>
+        <div class="{{solution.width_image}}px h-180px pt-15px cen-x" ng-mouseenter="hoverIn(solution)" ng-mouseleave="hoverOut(solution)"></div>
       </div>
       <div class="p-a w-100 h-100 z-2" ng-show="solution.hoverIn">
         <div class="p-a w-100 h-100 b-bk o-50 z-1"></div>
         <div class="p-a w-100 h-100 z-2">
-          <i class="f-120px lh-120px cen c-{{style.point1}} ion-ios-search-strong"></i>
+          <i class="f-120px lh-120px cen c-{{style.white}} ion-ios-search-strong"></i>
         </div>
       </div>
-      <div class="{{solution.width_image}} pt-15px cen-x z-1">
+      <div class="{{solution.width_image}}px pt-15px cen-x z-1">
         <button class="w-100">
           <div class="w-100">
-            <img class="w-100 h-180px" ng-src="{{solution.image}}">
+            <img class="w-{{solution.width_image}} h-auto" ng-src="{{solution.image}}">
           </div>
-          <div class="w-100 mt-30px">
-            <span class="f-24px cen-x c-{{style.point1}}">{{solution.name}}</span>
+          <div class="w-100 mt-30px" ng-class="[{'mt-60px':$middle}]">
+            <span class="f-24px lh-29px cen-x c-{{style.point1}}  f-sf-ultralight">{{solution.name}}</span>
           </div>
         </button>
       </div>
     </div>
-    <div class="{{solution.web_block}} h-100" ng-if="!$last">
-      <i class="f-45px lh-45px cen c-we ion-plus-round"></i>
+    <div class="{{solution.web_block}}px h-100" ng-if="!$last">
+      <i class="f-45px lh-45px cen c-{{style.plus_icon_color}} ion-plus-round"></i>
+    </div>
+  </div>
+  <!-- TABLET -->
+  <div class="{{solution.tablet_width}} h-171px d-n-X671 d-n-N1058" ng-class="{'w-120px':$last}">
+    <div class="{{solution.tablet_width_background}}px h-100" ng-click="clickImage(solution.dialog)">
+      <div class="p-a w-100 h-100 z-3">
+        <div class="{{solution.tablet_width_image}}px h-90px pt-15px cen-x" ng-mouseenter="hoverIn(solution)" ng-mouseleave="hoverOut(solution)"></div>
+      </div>
+      <div class="p-a w-100 h-100 z-2" ng-show="solution.hoverIn">
+        <div class="p-a w-100 h-100 b-bk o-50 z-1"></div>
+        <div class="p-a w-100 h-100 z-2">
+          <i class="f-80px lh-80px cen c-{{style.white}} ion-ios-search-strong"></i>
+        </div>
+      </div>
+      <div class="{{solution.tablet_width_image}}px pt-15px cen-x z-1">
+        <button class="w-100">
+          <div class="w-100">
+            <img class="w-100 h-120px" ng-src="{{solution.tablet_image}}">
+          </div>
+          <div class="w-100 mt-15px">
+            <span class="f-15px cen-x c-{{style.point1}} f-sf-ultralight">{{solution.name}}</span>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="{{solution.tablet_block}}px h-100" ng-if="!$last">
+      <i class="f-27px lh-27px cen c-{{style.plus_icon_color}} ion-plus-round"></i>
     </div>
   </div>
   <!-- APP -->
-  <div class="w-100 pl-30px pr-30px mt-15px d-n-N450" ng-class="{'mt-15px':!$first}">
+  <div class="w-100 pl-30D667M100 pr-30D667M100 d-n-N671" ng-class="{'mt-18px':!$first}">
     <div class="w-122px">
       <div class="w-18px h-60px" ng-show="!$first">
-        <i class="f-24px lh-24px c-{{style.point1}} cen-y ion-plus-round"></i>
+        <i class="f-24px lh-24px c-{{style.plus_icon_color}} cen-y ion-plus-round"></i>
       </div>
       <button class="w-100_18px h-60px" ng-class="[{'w-100_18px': !$first}, {'w-100':$first}, {'f-r':$first}]"
       ng-click="clickImage(solution.dialog)">
-        <img class="{{solution.app_width}} h-60px b-img cen-x" ng-src="{{solution.image}}" />
+        <img class="w-auto h-60px b-img cen-x" ng-src="{{solution.image}}" />
       </button>
     </div>
     <div class="w-100_122px pl-15px">
       <div class="w-100">
-        <span class="f-12px lh-15px c-{{style.point1}}">{{solution.name}}</span>
+        <span class="f-12px c-{{style.point1}} f-sf-bold">{{solution.name}}</span>
       </div>
       <div class="w-100 mt-6px">
-        <span class="f-9px c-we c-{{style.point1}}">{{solution.description}}</span>
+        <span class="w-100 f-9px lh-15px c-we c-{{style.point1}} f-sf-ultralight">{{solution.description}}</span>
       </div>
     </div>
   </div>

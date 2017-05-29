@@ -58,28 +58,33 @@ angular.module("shopApp")
       openNewWindow.location.href = url;
     };
 
-    $scope.pc_buttons = [
-      {button:"웹사이트", url:"https://www.naver.com/"},
-      {button:"관리자페이지", url:"https://www.google.co.kr/"}
-    ];
+    // if($rootScope.urlParser.getHostname()=='localhost' && $rootScope.urlParser.getPort() == '10600') {
 
-    $scope.mobile_buttons = [
-      {button:"웹사이트", url:"https://m.naver.com/"},
-      {button:"관리자페이지", url:"http://m.blog.naver.com/"}
-    ];
+      // $scope.pc_buttons = [
+      //   {button:"웹사이트", url:"https://www.naver.com/"},
+      //   {button:"관리자페이지", url:"https://www.google.co.kr/"}
+      // ];
+      //
+      // $scope.mobile_buttons = [
+      //   {button:"웹사이트", url:"https://m.naver.com/"},
+      //   {button:"관리자페이지", url:"http://m.blog.naver.com/"}
+      // ];
 
-    $scope.sns_button =
-      {button:"그래머 웹사이트 구경하기", url:"http://grammer.kr/"};
+      $scope.sns_button =
+        {button:"그래머 웹사이트 구경하기", url:"http://grammer.kr/"};
 
-    $scope.payment =
-    {ment:"신한은행 0201403310 김선욱(아이디스트)으로 5,000,000원 입금해주세요."}
-
+      $scope.payment =
+      {ment:"신한은행 0201403310 김선욱(아이디스트)으로 5,000,000원 입금해주세요."}
+    // }
 
   	$scope.initialize = function(){
+      console.log($rootScope.service);
       $scope.pc = $rootScope.service.popup.pc;
       $scope.mobile = $rootScope.service.popup.mobile;
       $scope.sns = $rootScope.service.popup.sns;
-      $scope.contact = $rootScope.service.contact;
+      $scope.contacts = $rootScope.service.contacts;
+      $scope.pc_buttons = $rootScope.service.pc_buttons;
+      $scope.mobile_buttons = $rootScope.service.mobile_buttons;
    	};
    	$scope.initialize();
   });

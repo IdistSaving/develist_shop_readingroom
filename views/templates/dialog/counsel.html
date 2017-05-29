@@ -1,29 +1,108 @@
 <div class="p-f w-100 h-100vh">
-  <div class="w-750px-N450 h-750px-N450 w-300px-X450 h-450px-X450 b-we cen bor-12px bs-0_5_5__bk_30 z-2">
-    <div class="p-a t-15px-N450 r-15px-N450 t-6px-X450 r-6px-X450 z-3">
-      <i class="f-45px-N450 lh-45px-N450 c-E0E0E0 f-30px-X450 lh-30px-X450 ion-close" ng-click="clickClose()"></i>
+  <!-- WEB -->
+  <div class="w-750px h-750px b-we cen bor-12px bs-0_5_5__bk_30 z-2 d-n-X1058">
+    <div class="p-a t-15px r-15px z-3">
+      <i class="f-45px lh-45px c-E0E0E0 ion-close" ng-click="clickClose()"></i>
     </div>
-    <div class="w-100 h-100 pt-60px-N450 pl-124px-N450 pr-124px-N450 pb-30px-N450 pt-30px-X450 pl-22px-X450 pr-22px-X450 pb-15px-X450">
+    <div class="w-100 h-100 pt-60px pl-124px pr-124px pb-30px">
       <div class="cen-x">
-        <span class="f-45px-N450 lh-55px-N450 fw-b f-24px-X450 c-BDBDBD lh-29px-X450">상담 받기</span>
+        <span class="f-45px lh-55px fw-b c-BDBDBD">상담 받기</span>
       </div>
-      <div class="w-100 mt-60px-N450 mt-30px-X450">
-        <div class="w-243px-N450 h-50px-N450 w-120px-X450 h-30px-X450 bo-1px bo-E0E0E0" ng-repeat="(info_index, info) in infos track by info_index"
+      <div class="w-100 mt-60px">
+        <div class="w-243px h-50px bo-1px bo-E0E0E0" ng-repeat="(info_index, info) in infos track by info_index"
         ng-class="[{'mt-15px': info_index / 2 >= 1}, {'ml-15px': (info_index+1) % 2 != 1}]">
-          <input type="{{info.input_type}}" class="w-100 h-100 f-15px-N450 lh-19px-N450 pt-15px-N450 pb-15px-N450 pl-30px-N450 pr-30px-N450 pc-E0E0E0 f-12px-X450 lh-15px-X450 pl-15px-X450 pt-7px-X450 pb-7px-X450 pr-15px-X450"
+          <input type="{{info.input_type}}" class="w-100 h-100 f-15px lh-19px pt-15px pb-15px pl-30px pr-30px pc-E0E0E0"
            placeholder="{{info.info}}" ng-model="counsel_model[info.model]"></input>
         </div>
-        <div class="w-100 h-180px-N450 bo-1px bo-E0E0E0 mt-15px h-150px-X450">
-          <textarea class="w-100 h-100 f-15px-N450 lh-19px-N450 pt-15px-N450 pb-15px-N450 pl-30px-N450 pr-30px-N450 pc-E0E0E0 f-12px-X450 lh-15px-X450 p-15px-X450" style="white-space:pre-line; resize:none;"
+        <div class="w-100 h-180px bo-1px bo-E0E0E0 mt-15px">
+          <textarea class="w-100 h-100 f-15px lh-19px pt-15px pb-15px pl-30px pr-30px pc-E0E0E0" style="white-space:pre-line; resize:none;"
            placeholder="상담내용" ng-model="counsel_model.counsel"></textarea>
         </div>
-        <button class="w-100 h-75px-N450 bo-1px bo-E0E0E0 mt-30px b-we b-BDBDBD-H c-BDBDBD c-we-H h-45px-X450" ng-click="saveCounsel()">
-          <span class="f-24px-N450 lh-29px-N450 fw-b f-15px-X450 lh-19px-X450 cen-x">상담 신청</span>
+        <button class="w-100 h-75px bo-1px bo-E0E0E0 mt-30px b-we b-BDBDBD-H c-BDBDBD c-we-H" ng-click="saveCounsel()">
+          <span class="f-24px lh-29px fw-b cen-x">상담 신청</span>
         </button>
-        <div class="w-100 mt-101px-N450 mt-15px-X450">
-          <div class="cen-x">
-            <span class="f-24px-N450 lh-29px-N450 c-BDBDBD f-12px-X450 lh-15px-X450">{{contact.name}}</span>
-            <span class="f-24px-N450 lh-29px-N450 ml-15px-N450 c-BDBDBD fw-b f-12px-X450 lh-15px-X450 ml-9px-X450">{{contact.tel}}</span>
+        <div class="w-100 mt-101px">
+          <div class="w-50" ng-repeat="(contact_index, contact) in contacts track by contact_index">
+            <div class="w-36px">
+              <i class="f-36px lh-36px c-9E9E9E {{contact.icon}}"></i>
+            </div>
+            <div class="w-100_36px pl-21px">
+              <span class="w-100 f-12px lh-15px c-BDBDBD o-50">{{contact.text_en}}</span>
+              <span class="w-100 f-18px lh-21px c-BDBDBD fw-b">{{contact.text}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- TABELT -->
+  <div class="w-750pxM0o64 h-750pxM0o64 b-we cen bor-12px bs-0_5_5__bk_30 z-2 d-n-X671 d-n-N1058">
+    <div class="p-a t-12px r-12px z-3">
+      <i class="f-36px lh-36px c-E0E0E0 ion-close" ng-click="clickClose()"></i>
+    </div>
+    <div class="w-100 h-100 pt-36px pl-45px pr-45px">
+      <div class="cen-x">
+        <span class="f-30px fw-b c-BDBDBD">상담 받기</span>
+      </div>
+      <div class="w-100 mt-30px">
+        <div class="w-187px h-45px bo-1px bo-E0E0E0" ng-repeat="(info_index, info) in infos track by info_index"
+        ng-class="[{'mt-15px': info_index / 2 >= 1}, {'ml-15px': (info_index+1) % 2 != 1}]">
+          <input type="{{info.input_type}}" class="w-100 h-100 f-15px lh-19px pt-15px pb-15px pl-15px pr-15px pc-E0E0E0"
+           placeholder="{{info.info}}" ng-model="counsel_model[info.model]"></input>
+        </div>
+        <div class="w-100 h-180pxM0o64 bo-1px bo-E0E0E0 mt-15px">
+          <textarea class="w-100 h-100 f-15px lh-19px pt-15px pb-15px pl-15px pr-15px pc-E0E0E0" style="white-space:pre-line; resize:none;"
+           placeholder="상담내용" ng-model="counsel_model.counsel"></textarea>
+        </div>
+        <button class="w-100 h-75pxM0o64 bo-1px bo-E0E0E0 mt-20px b-we b-BDBDBD-H c-BDBDBD c-we-H"
+         ng-click="saveCounsel()">
+          <span class="f-18px lh-24px fw-b cen-x">상담 신청</span>
+        </button>
+        <div class="w-100 mt-30px">
+          <div class="w-50" ng-repeat="(contact_index, contact) in contacts track by contact_index">
+            <div class="w-27px">
+              <i class="f-27px lh-27px c-9E9E9E {{contact.icon}}"></i>
+            </div>
+            <div class="w-100_27px pl-15px">
+              <span class="w-100 f-9px lh-12px c-BDBDBD o-50">{{contact.text_en}}</span>
+              <span class="w-100 f-12px lh-15px c-BDBDBD fw-b">{{contact.text}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- APP -->
+  <div class="w-300px h-450px b-we cen bor-12px bs-0_5_5__bk_30 z-2 d-n-N671">
+    <div class="p-a t-6px r-6px z-3">
+      <i class="f-30px lh-30px c-E0E0E0 ion-close" ng-click="clickClose()"></i>
+    </div>
+    <div class="w-100 h-100 pt-30px pl-22px pr-22px pb-15px">
+      <div class="cen-x">
+        <span class="f-24px lh-29px fw-b c-BDBDBD">상담 받기</span>
+      </div>
+      <div class="w-100 mt-30px">
+        <div class="w-120px h-30px bo-1px bo-E0E0E0" ng-repeat="(info_index, info) in infos track by info_index"
+        ng-class="[{'mt-15px': info_index / 2 >= 1}, {'ml-15px': (info_index+1) % 2 != 1}]">
+          <input type="{{info.input_type}}" class="w-100 h-100 f-12px lh-15px pl-15px pt-7px pb-7px pr-15px pc-E0E0E0"
+           placeholder="{{info.info}}" ng-model="counsel_model[info.model]"></input>
+        </div>
+        <div class="w-100 h-150px bo-1px bo-E0E0E0 mt-15px">
+          <textarea class="w-100 h-100 f-12px lh-15px p-15px pc-E0E0E0" style="white-space:pre-line; resize:none;"
+           placeholder="상담내용" ng-model="counsel_model.counsel"></textarea>
+        </div>
+        <button class="w-100 h-45px bo-1px bo-E0E0E0 mt-30px b-we b-BDBDBD-H c-BDBDBD c-we-H" ng-click="saveCounsel()">
+          <span class="f-15px lh-19px fw-b cen-x">상담 신청</span>
+        </button>
+        <div class="w-100 mt-15px">
+          <div class="w-50" ng-repeat="(contact_index, contact) in contacts track by contact_index">
+            <div class="w-18px">
+              <i class="f-18px lh-18px c-9E9E9E {{contact.icon}}"></i>
+            </div>
+            <div class="w-100_36px pl-9px">
+              <span class="w-100 f-6px lh-12px c-BDBDBD o-50">{{contact.text_en}}</span>
+              <span class="w-100 f-9px lh-15px c-BDBDBD fw-b">{{contact.text}}</span>
+            </div>
           </div>
         </div>
       </div>

@@ -1,12 +1,13 @@
 <div class="w-100">
   <div class="cen-x">
-    <button class="w-240px-N450 h-75px-N450 bo-3px-N450 w-120px-X450 h-45px-X450 bo-1px-X450 bo-{{style.point1}}"
+    <button class="w-240px-N1058 h-75px-N1058 bo-3px-N1058 w-180px-N617X1058 h-60px-N617X1058 bo-2px-N617X1058
+     w-120px-X617 h-45px-X617 bo-1px-X617 bo-{{style.point1}}"
     ng-repeat="(button_index, button) in buttons track by button_index"
-    ng-class="[{'ml-30px-N450 ml-15px-X450':!$first}]"
+    ng-class="[{'ml-30px-N1058 ml-22px-N617X1058 ml-15px-X617':!$first}]"
     ng-click="clickButton(button.dialog)">
       <div class="w-100 h-100 b-{{style.point1}}-H c-{{style.color_text_button}}-H c-{{style.point1}}">
         <div class="cen">
-          <span class="f-24px-N450 lh-29px-N450 f-15px-X450 lh-19px-X450">{{button.button}}</span>
+          <span class="f-24px-N1058 lh-29px-N1058 f-20px-N617X1058 lh-24px-N617X1058 f-15px-X617 lh-19px-X617">{{button.button}}</span>
         </div>
       </div>
     </button>

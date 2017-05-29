@@ -1,29 +1,93 @@
 <div class="p-f w-100 h-100vh">
-  <div class="w-750px-N450 h-750px-N450 w-300px-X450 h-450px-X450 b-we cen bor-12px bs-0_5_5__bk_30 z-2">
-    <div class="p-a t-15px-N450 r-15px-N450 t-6px-X450 r-6px-X450 z-3">
-      <i class="f-45px-N450 lh-45px-N450 c-BDBDBD f-30px-X450 lh-30px-X450 ion-close" ng-click="clickClose()"></i>
+  <div class="w-750px h-750px b-we cen bor-12px bs-0_5_5__bk_30 z-2 d-n-X1058">
+    <div class="p-a t-15px r-15px z-3">
+      <i class="f-45px lh-45px c-BDBDBD ion-close" ng-click="clickClose()"></i>
     </div>
-    <div class="w-100 h-100 p-60px-N450 pt-60px-X450 pl-22px-X450 pr-22px-X450 pb-30px-X450">
+    <div class="w-100 h-100 p-60px">
       <div class="cen-x">
-        <img class="w-auto h-240px-N450 h-90px-X450" ng-src="{{pc.image}}">
+        <img class="w-auto h-240px" ng-src="{{pc.image}}">
       </div>
-      <div class="w-100 mt-60px-N450 mt-30px-X450">
-        <span class="f-30px-N450 lh-36px-N-450 c-BDBDBD fw-b f-15px-X450 lh-19px-X450 cen-x">{{pc.title}}</span>
+      <div class="w-100 mt-60px">
+        <span class="f-30px lh-36px c-BDBDBD fw-b cen-x">{{pc.title}}</span>
       </div>
-      <div class="w-100 mt-30px-N450 mt-15px-X450">
-        <span class="f-24px-N450 lh-48px-N450 c-BDBDBD f-9px-X450 lh-24px-X450 t-c">
+      <div class="w-100 mt-30px">
+        <span class="f-24px lh-48px c-BDBDBD t-c">
           <span class="fw-b">{{pc.description1}}</span>
           {{pc.description2}}
         </span>
       </div>
       <div class="cen-x">
-        <button class="w-240px-N450 h-75px-N450 bo-3px-N450 mt-93px-N450 b-we b-BDBDBD-H c-BDBDBD c-we-H w-120px-X450 h-45px-X450 bo-1px-X450 mt-90px-X450"
+        <button class="w-240px b-bk h-75px bo-3px mt-93px-N1058 b-we b-BDBDBD-H c-BDBDBD c-we-H"
         ng-repeat="(button_index, button) in pc_buttons track by button_index" ng-click="clickGo(button.url)"
-        ng-class="[{'ml-30px-N450 ml-15px-X450':!$first}]">
+        ng-class="[{'ml-30px':!$first}]">
           <div class="w-100 h-100">
             <div class="cen">
-              <span class="f-24px-N450 lh-29px-N450 fw-b f-15px-X450 lh-19px-X450">{{button.button}}</span>
-              <span class="f-24px lh-29px fw-b d-n-X450">(PC)</span>
+              <span class="f-24px lh-29px fw-b">{{button.button}}</span>
+              <span class="f-24px lh-29px fw-b d-n-X617">(PC)</span>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- TABLET -->
+  <div class="w-750pxM0o64 h-750pxM0o64 b-we cen bor-12px bs-0_5_5__bk_30 z-2 d-n-X671 d-n-N1058">
+    <div class="p-a t-12px r-12px z-3">
+      <i class="f-36px lh-36px c-BDBDBD ion-close" ng-click="clickClose()"></i>
+    </div>
+    <div class="w-100 h-100 p-45px">
+      <div class="cen-x">
+        <img class="w-auto h-240pxM0o64" ng-src="{{pc.tablet_image}}">
+      </div>
+      <div class="w-100 mt-45px">
+        <span class="f-27px lh-36px c-BDBDBD fw-b cen-x">{{pc.title}}</span>
+      </div>
+      <div class="w-100 mt-21px">
+        <span class="f-15px lh-30px c-BDBDBD t-c">
+          <span class="fw-b">{{pc.description1}}</span>
+          {{pc.description2}}
+        </span>
+      </div>
+      <div class="cen-x">
+        <button class="w-180px h-45px bo-1px mt-45px b-bk b-we b-BDBDBD-H c-BDBDBD c-we-H"
+        ng-repeat="(button_index, button) in pc_buttons track by button_index" ng-click="clickGo(button.url)"
+        ng-class="[{'ml-24px':!$first}]">
+          <div class="w-100 h-100">
+            <div class="cen">
+              <span class="f-18px lh-21px fw-b">{{button.button}}</span>
+              <span class="f-18px lh-21px fw-b d-n-X617">(PC)</span>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- APP -->
+  <div class="w-300px h-450px b-we cen bor-12px bs-0_5_5__bk_30 z-2 d-n-N671">
+    <div class="p-a t-6px r-6px z-3">
+      <i class="f-30px lh-30px c-BDBDBD ion-close" ng-click="clickClose()"></i>
+    </div>
+    <div class="w-100 h-100 pt-60px pl-22px pr-22px pb-30px">
+      <div class="cen-x">
+        <img class="w-auto h-90px" ng-src="{{pc.image}}">
+      </div>
+      <div class="w-100 mt-30px">
+        <span class="f-15px lh-19px c-BDBDBD cen-x">{{pc.title}}</span>
+      </div>
+      <div class="w-100 mt-15px">
+        <span class="f-9px lh-24px t-c c-BDBDBD">
+          <span class="fw-b">{{pc.description1}}</span>
+          {{pc.description2}}
+        </span>
+      </div>
+      <div class="cen-x">
+        <button class="w-120px h-45px bo-1px mt-90px b-bk b-we b-BDBDBD-H c-BDBDBD c-we-H"
+        ng-repeat="(button_index, button) in pc_buttons track by button_index" ng-click="clickGo(button.url)"
+        ng-class="[{'ml-15px':!$first}]">
+          <div class="w-100 h-100">
+            <div class="cen">
+              <span class="f-15px lh-19px fw-b">{{button.button}}</span>
+              <span class="f-24px lh-29px fw-b d-n-X617">(PC)</span>
             </div>
           </div>
         </button>
