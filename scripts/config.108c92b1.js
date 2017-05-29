@@ -6,7 +6,7 @@ angular.module('shopApp')
     $stateProvider
 
       // LANDING
-      .state('landing', { url: '/landing', templateUrl: 'views/landing/landing.html', controller: 'LandingCtrl', group: 'landing' })
+      .state('landing', { url: '/', templateUrl: 'views/landing/landing.html', controller: 'LandingCtrl', group: 'landing' })
 
-    $urlRouterProvider.otherwise('/landing');
+    $urlRouterProvider.otherwise('/');
   });

@@ -42,12 +42,9 @@ angular
     // $resource('json/nail.json').get({},function(service){
     $resource('json/readingRoom.json').get({},function(service){
       $rootScope.service = service;
-
     });
   }
   $rootScope.initialize();
-
-
 
   if (storageS.get('is_auto_login')) {
     $rootScope.user = storageS.get('user');

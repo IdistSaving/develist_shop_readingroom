@@ -28,11 +28,15 @@ angular.module("shopApp")
 
 
   	$scope.initialize = function(){
-      $scope.titles = $rootScope.service.titles;
-      $scope.background = $rootScope.service.background;
-      $scope.solutions = $rootScope.service.solutions;
-      $scope.style = $rootScope.service.style;
-      $scope.price = $rootScope.service.price;
+      if($rootScope.service){
+        $scope.titles = $rootScope.service.titles;
+        $scope.background = $rootScope.service.background;
+        $scope.solutions = $rootScope.service.solutions;
+        $scope.style = $rootScope.service.style;
+        $scope.price = $rootScope.service.price;
+      }
    	};
-   	$scope.initialize();
+    $rootScope.$watch('service', function(){
+      $scope.initialize();
+    });
   });
